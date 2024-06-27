@@ -1,0 +1,339 @@
+:root{
+    --red-color:#fc3746;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    
+}
+button{
+    padding: 10px 20px;
+    background-color: var(--red-color);
+    color: white;
+    font-size: 1.2rem;
+    border-color: transparent;
+}
+body{
+    background-color: black;
+}
+.container{
+    max-width: 1150px;
+}
+.layer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.705);
+    min-height: 60vh;
+}
+.h5{
+    color: var(--red-color);
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 600;
+}
+.h2{font-weight: 700; color: white;
+    line-height: 0.8;
+    font-size: 4rem;
+    padding: 20px 10px 50px;
+    line-height: 1;
+}
+span{
+    color: var(--red-color);
+}
+
+ /* start header  */
+header , .foot , footer{
+    background-image:url(../img/bg-0001-c.jpg);
+    background-size: cover;
+    background-position: center;
+    /* height: 90vh; */
+    width: 100%;
+}
+
+/* start nav */
+nav{
+    height: 70px;
+    z-index: 3;
+    position: relative;
+    
+}
+    .nav-item{
+        margin-left:2px;position: relative;overflow: hidden;
+    }
+    .nav-item::after{
+        content: "";
+        position: absolute;
+        left: -100%;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--red-color);
+        transition: 0.3s all ease;
+        -webkit-transition: 0.3s all ease;
+        -moz-transition: 0.3s all ease;
+        -ms-transition: 0.3s all ease;
+        -o-transition: 0.3s all ease;
+        color: rgb(244, 250, 255);
+        
+    }
+    .nav-link:hover{font-weight: 600;
+        
+    }
+    .nav-item:hover .nav-link{
+        color: red;
+    }
+    .nav-item:hover::after{
+        left: 0;
+    } 
+    .active{
+        color: #fc3746;
+    }
+    nav .shop-icon{
+        width: 30px;
+        height: 100%;
+        margin-right: 100px;
+    }
+    nav .shop-icon i{
+        color: var(--red-color);font-size: 25px;padding-bottom: 10px
+        }
+
+/* start welcome */
+.welcome{
+padding-top: 200px;
+}
+.timer{
+    margin:200px 20px;
+    display: grid;
+}
+.timer .box{
+    border: 1px white solid;
+    width: 25%;
+    height: 100%;
+}
+.timer .box .inner{
+    font-size: 2rem;
+}
+
+/* start sticky icons */
+.icon-up{display: none;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background-color: var(--red-color);
+    bottom: 30px;
+    right: 30px;
+    padding-top: px;
+    text-align: center;
+    border-radius: 4px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    z-index: 10;
+    color: rgb(253, 253, 253);
+    font-size: 20px;
+    transition: 0.3s all ease;
+    
+}
+.up{
+    
+}
+.icon-up.showUp{
+    display: block;
+}
+.icon-cu{
+    position: fixed;
+    width: 130px;
+    height: 50px;
+    background-color: white;
+    top: 300px;
+    right: 0px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    z-index: 10;
+    p{
+        color: black;
+    }
+}
+
+/* start fav section */
+.pr-fav{
+    background-color: black;
+    min-height: 70vh
+}
+.pr-fav .container {width: 100%;
+    background-image: url(../img/bg-006.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.product .img-box{
+    max-width: 50%;
+} 
+
+.product  .text p{
+    color: white;
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 1.7;
+    padding-bottom: 30px;
+}
+/* start exclusive */
+.exclusive{
+    background-color: black;
+    min-height: 80vh;
+}
+.exclusive .img-box{padding: 0;
+    margin: 0;
+    position: relative;
+}
+.exclusive .img-box::after{
+    content: "";
+    background-image: url(../img/6-product-400x463.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    left: -20px;
+    top: 50px;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+}
+/* start discount */
+.discount , .offer, .joy-shop{
+    background-color: black;
+    min-height: 60vh;
+}
+.discount .line{
+    width: 70px;
+    height: 2px;
+    background-color: white;
+}
+.pd-box .icons i{
+    margin-left: -7px;
+} 
+
+/* start offer */
+.offer .container{
+background-image: url(../img/bg-07.jpg);
+background-size: 92% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* start clients */
+.clients .container{
+    background-image: url(../img/testimonials.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90% 100%;
+    padding:0 ;
+    box-sizing: border-box;
+    box-shadow: 0px 30px 40px 10px rgb(14, 13, 13);
+    position: relative;
+}
+/* start hiedden */
+.hidden .container{
+        background-color: aqua;
+        display: none;
+        width: 90%;
+        height: 100vh;
+        background-image: url(../img/testimonials.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: fixed;
+        top: 0px;
+        left: 50%;
+        transform:translatex(-50%) ;
+        z-index: -1;
+        -webkit-transform:translatex(-50%) ;
+        -moz-transform:translatex(-50%) ;
+        -ms-transform:translatex(-50%) ;
+        -o-transform:translatex(-50%) ;
+        
+}
+/* start foot */
+.foot{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+.foot .layer{
+    padding-top: 100px;
+    
+}
+/* start footer */
+footer{
+    border-top: 1px solid gray;
+    height: auto;
+}
+footer ul{
+    
+    justify-content: end;
+}
+footer ul li .home {
+    color: var(--red-color);
+}
+footer ul li a{ font-size: 14px; transition:0.2s all ease 
+    ; -webkit-transition:0.2s all ease ;
+    -moz-transition:0.2s all ease ;
+    -ms-transition:0.2s all ease ;
+    -o-transition:0.2s all ease ; }
+footer ul li:hover a{font-weight: 500;
+}
+footer .lay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.795);
+}
+
+/* start midea quiry */
+@media screen and (max-width: 767px){
+    .exclusive .img-box::after{
+        left: -20px;
+    top: 30px;
+    width: 60px;
+    height: 60px;
+    }
+    .h2{
+        font-size: 2rem;
+    }
+    .h5 {
+        font-size: 1.5rem;
+    }
+    .clients .container{
+        position:relative ;
+        bottom: -50px;
+        }
+        .icon-cu{
+            right: -90px;
+            height: 30px;
+        }
+}
+@media screen and (max-width: 991px){
+     .nav-item::after{
+            background-color: black;
+
+        }
+}
+@media screen and (min-width: 767px){
+    .product  .container .text{
+        max-width: 65%;
+    }
+    .clients .container{
+    background-image: none;
+    position: relative;
+    width: 100%;
+    box-shadow: 0px 0px 0px 0px ;
+    }
+}
